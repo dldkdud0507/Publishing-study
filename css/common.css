@@ -1,0 +1,73 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 300;
+    src: url(../font/Pretendard/Pretendard-Light.woff2);
+}
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 400;
+    src: url(../font/Pretendard/Pretendard-Regular.woff2);
+}
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 500;
+    src: url(../font/Pretendard/Pretendard-Medium.woff2);
+}
+@font-face {
+    font-family: 'pretendard';
+    font-weight: 600;
+    src: url(../font/Pretendard/Pretendard-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'NanumsquareNeo';
+    font-weight: 300;
+    src: url(../font/NanumSquareNeo/nanumSquareNeo-Light.woff2);
+}
+@font-face {
+    font-family: 'NanumsquareNeo';
+    font-weight: 400;
+    src: url(../font/NanumSquareNeo/nanumSquareNeo-Regular.woff2);
+}
+@font-face {
+    font-family: 'NanumsquareNeo';
+    font-weight: 600;
+    src: url(../font/NanumSquareNeo/nanumSquareNeo-Bold.woff2);
+}
+@font-face {
+    font-family: 'NanumsquareNeo';
+    font-weight: 700;
+    src: url(../font/NanumSquareNeo/nanumSquareNeo-ExtraBold.woff2);
+}
+@font-face {
+    font-family: 'NanumsquareNeo';
+    font-weight: 900;
+    src: url(../font/NanumSquareNeo/nanumSquareNeo-Black.woff2);
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: 'pretendard';
+    font-size: 1rem;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
