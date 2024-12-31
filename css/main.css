@@ -33,6 +33,7 @@ header {
     width: 100%;
     height: 124px;
     /* height: 504px; */
+    background-color: transparent;
 }
 
 .t_link {
@@ -140,7 +141,7 @@ button {
     justify-content: space-between;
     width: 76px;
     height: 28px;
-    background-color: deepskyblue;
+    /* background-color: deepskyblue; */
 }
 
 .right_header svg {
@@ -232,35 +233,25 @@ button {
 /* 헤더 end */
 
 /* 메인 컨텐츠 start */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .slider {
+    top: -124px;
     width: 100%;
     /* 슬라이더의 너비 */
-    height: 730px;
+    height: 900px;
     /* 슬라이더의 높이 */
     overflow: hidden;
     /* 이미지가 박스 바깥으로 나가지 않도록 함 */
     position: relative;
     /* 슬라이드 위치 조정을 위함 */
+    z-index: -1;
 }
 
 .slides {
@@ -277,14 +268,52 @@ button {
 .slides img {
     width: 100%;
     /* 슬라이더 너비에 맞게 조정 */
-    height: 730px;
+    height: 900px;
     /* 슬라이더 높이에 맞게 조정 */
     object-fit: cover;
     /* 이미지가 박스에 꽉 차도록 조정하되, 비율 유지 */
 }
 
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sec_01 {
+    position: absolute;
+    top: -900px;
+    left: 0;
+    width: 100%;
+    height: 780px;
+}
+
+.left_con {
+    width: calc(100% - 18%);
+    background-color: lightcoral;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Demo styles */
-.swiper-slide {
+/* .swiper-slide {
     width: 450px;
     height: 340px;
 }
@@ -308,12 +337,12 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 /* //Demo styles */
 
 /* 배너 슬라이드 swiper */
-.swiper {
+/* .swiper {
     width: 100%;
     height: 100%;
 }
@@ -332,7 +361,7 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 /* //배너 슬라이드 swiper */
 
