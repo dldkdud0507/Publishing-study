@@ -285,14 +285,31 @@ button {
     top: -900px;
     left: 0;
     width: 100%;
-    height: 780px;
+    height: 776px;
 }
 
 .left_con {
     width: calc(100% - 18%);
+    height: 100%;
     background-color: lightcoral;
 }
 
+.main_title {
+    width: 706px;
+    height: 268px;
+    margin-left: 50px;
+    background-color: #674FDC;
+}
+
+.title {
+    width: 100%;
+    height: 172px;
+}
+
+.title>h1 {
+    font-size: 3.5rem;
+    color: #FFF;
+}
 
 
 
