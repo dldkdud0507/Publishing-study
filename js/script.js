@@ -1,7 +1,7 @@
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slides');
 const slideCount = slides.length;
-
+console.log('스크립트 로드됨')
 function showSlide(n) {
     slides.forEach(slide => slide.style.display = 'none');
     slides[n].style.display = 'block';

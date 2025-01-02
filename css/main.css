@@ -141,7 +141,7 @@ button {
     justify-content: space-between;
     width: 76px;
     height: 28px;
-    /* background-color: deepskyblue; */
+    background-color: deepskyblue;
 }
 
 .right_header svg {
