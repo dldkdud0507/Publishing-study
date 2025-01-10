@@ -26,6 +26,39 @@
     padding: 10px;
 }
 
+.slider {
+    top: -124px;
+    width: 100%;
+    /* 슬라이더의 너비 */
+    height: 727px;
+    /* 슬라이더의 높이 */
+    overflow: hidden;
+    /* 이미지가 박스 바깥으로 나가지 않도록 함 */
+    position: relative;
+    /* 슬라이드 위치 조정을 위함 */
+    z-index: -1;
+}
+
+.slides {
+    width: 100%;
+    /* 부모 요소와 동일한 너비 */
+    height: 100%;
+    /* 부모 요소와 동일한 높이 */
+    display: flex;
+    /* 이미지를 가로로 나열 */
+    transition: transform 0.5s ease-in-out;
+    /* 부드러운 전환 효과 */
+}
+
+.slides img {
+    width: 100%;
+    /* 슬라이더 너비에 맞게 조정 */
+    height: 727px;
+    /* 슬라이더 높이에 맞게 조정 */
+    object-fit: cover;
+    /* 이미지가 박스에 꽉 차도록 조정하되, 비율 유지 */
+}
+
 header {
     position: relative;
     top: 0;
@@ -116,10 +149,13 @@ button {
 .menu ul {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: calc(100% - 21%);
+    gap: 2rem;
 }
 
 .menu ul li a {
-    width: 19rem;
+    width: 11.875rem;
     float: left;
     color: #FFF;
     text-align: center;
@@ -141,7 +177,7 @@ button {
     justify-content: space-between;
     width: 76px;
     height: 28px;
-    background-color: deepskyblue;
+    /* background-color: deepskyblue; */
 }
 
 .right_header svg {
@@ -230,6 +266,114 @@ button {
 }
 
 /* //전체메뉴 햄버거 */
+
+/* section 01 start */
+.sec_01 {
+    position: absolute;
+    top: 124px;
+    left: 0;
+    width: 100%;
+    height: 603px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_con {
+    width: calc(100% - 18%);
+    height: 100%;
+    padding-top: 116px;
+    padding-left: 50px;
+    padding: 116px 50px 110px 50px;
+}
+
+.main_title {
+    width: 100%;
+    height: 268px;
+}
+
+.main_title {
+    width: 100%;
+    height: 172px;
+}
+
+.main_title>h1 {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    color: #FFF;
+}
+
+.main_title>p {
+    font-size: 1.375rem;
+    color: #FFF;
+    letter-spacing: -0.5px;
+    margin-top: 12px;
+}
+
+.pagination_box {
+    width: 240px;
+    height: 46px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.pagination_box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.line {
+    width: 240px;
+    height: 4px;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+.search_box {
+    width: 620px;
+    margin-top: 70px;
+    display: flex;
+}
+
+.search_box>input {
+    width: 82%;
+    height: 100%;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    color: #999;
+    padding: 19px 24px;
+    background-color: transparent;
+}
+
+.search_box>button {
+    width: 60px;
+    height: 60px;
+    border-radius: 0rem 0rem 1rem 0rem;
+    background-color: #114493;
+}
+
+.search_box svg {
+    width: 40px;
+    height: 40px;
+}
+
+.right_con {
+    width: calc(100% - 18%);
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    color: #fff;
+}
+
+.con_01_title {}
+
+.con_02_title {}
+
+.con_03_title {}
+
+/* section 01 end */
+
 /* 헤더 end */
 
 /* 메인 컨텐츠 start */
@@ -241,74 +385,10 @@ button {
     height: 100%;
 }
 
-.slider {
-    top: -124px;
-    width: 100%;
-    /* 슬라이더의 너비 */
-    height: 900px;
-    /* 슬라이더의 높이 */
-    overflow: hidden;
-    /* 이미지가 박스 바깥으로 나가지 않도록 함 */
-    position: relative;
-    /* 슬라이드 위치 조정을 위함 */
-    z-index: -1;
-}
-
-.slides {
-    width: 100%;
-    /* 부모 요소와 동일한 너비 */
-    height: 100%;
-    /* 부모 요소와 동일한 높이 */
-    display: flex;
-    /* 이미지를 가로로 나열 */
-    transition: transform 0.5s ease-in-out;
-    /* 부드러운 전환 효과 */
-}
-
-.slides img {
-    width: 100%;
-    /* 슬라이더 너비에 맞게 조정 */
-    height: 900px;
-    /* 슬라이더 높이에 맞게 조정 */
-    object-fit: cover;
-    /* 이미지가 박스에 꽉 차도록 조정하되, 비율 유지 */
-}
-
 .container {
     position: relative;
     top: 0;
     left: 0;
-}
-
-.sec_01 {
-    position: absolute;
-    top: -900px;
-    left: 0;
-    width: 100%;
-    height: 776px;
-}
-
-.left_con {
-    width: calc(100% - 18%);
-    height: 100%;
-    background-color: lightcoral;
-}
-
-.main_title {
-    width: 706px;
-    height: 268px;
-    margin-left: 50px;
-    background-color: #674FDC;
-}
-
-.title {
-    width: 100%;
-    height: 172px;
-}
-
-.title>h1 {
-    font-size: 3.5rem;
-    color: #FFF;
 }
 
 
