@@ -1,9 +1,9 @@
+/* 바로가기 skip navi */
 .skip-navi {
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 9999;
+    left: -1000px;
+    /* 화면에서 벗어나게 만듦듦 */
+    top: -1000px;
 }
 
 .skip-navi a {
@@ -22,9 +22,21 @@
 }
 
 .skip-navi a:focus {
-    height: auto;
+    position: static;
+    /* 포커스 상태에서 보이도록 만듦 */
+    top: 0;
+    left: 0;
+    background: #000;
+    /* 배경색 추가 */
+    color: #fff;
+    /* 글자색 추가 */
     padding: 10px;
+    text-decoration: none;
+    z-index: 1000;
+    /* 다른 요소 위로 오도록 설정 */
 }
+
+/* //바로가기 skip navi */
 
 .slider {
     top: -124px;
@@ -243,11 +255,13 @@ button {
     display: none;
     /* 기본적으로 숨김 */
     position: absolute;
-    top: 50px;
+    top: 60px;
     /* 햄버거 메뉴 아래로 위치 */
-    right: 0px;
+    right: 0;
     /* 화면 오른쪽에 붙임 */
     background: #333;
+    /* width: 100%;
+    height: 100vh; */
     padding: 15px;
     border-radius: 5px;
     z-index: 9999;
@@ -264,6 +278,10 @@ button {
 .all_menu a:hover {
     text-decoration: underline;
 }
+
+/* .all_menu.active .menu_icon>span {
+    fill: #111;
+} */
 
 /* //전체메뉴 햄버거 */
 
@@ -319,6 +337,7 @@ button {
 .pagination_box p {
     display: flex;
     justify-content: space-between;
+    margin: 30px 50px 0px 0px;
     font-size: 1rem;
     font-weight: 700;
 }
@@ -359,18 +378,53 @@ button {
 }
 
 .right_con {
-    width: calc(100% - 18%);
+    width: 350px;
     height: 100%;
-    padding-left: 50px;
     display: flex;
     color: #fff;
 }
 
-.con_01_title {}
+.right_con ul {
+    width: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-.con_02_title {}
+.right_con li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    font-size: 1.25rem;
+    padding: 40px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-.con_03_title {}
+.right_con li:last-child {
+    border-bottom: none;
+}
+
+.con_title {
+    width: 290px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.count_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.count {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.count_wrap p {
+    margin-left: 3px;
+}
 
 /* section 01 end */
 
@@ -391,8 +445,16 @@ button {
     left: 0;
 }
 
+/* section 02 start */
+.sec_02 {}
 
+.title {}
 
+.left_con_wrap {}
+
+.tab {}
+
+/* section 02 end */
 
 
 
